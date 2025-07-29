@@ -1,0 +1,1 @@
+export const RAZORPAY_KAY="rzp_test_NIrbRvvhm0uTuq";
