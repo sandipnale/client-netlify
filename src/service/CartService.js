@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_URL = "http://localhost:8080/api/cart";
+const API_URL = "http://ec2-13-126-78-224.ap-south-1.compute.amazonaws.com:8080/api/cart";
 
 export const addToCart = async (foodId, token) => {
     try {
