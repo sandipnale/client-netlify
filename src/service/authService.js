@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api";
+const API_URL = "http://ec2-13-126-78-224.ap-south-1.compute.amazonaws.com:8080/api";
 
 export const registerUser = async (data) => {
     try {
