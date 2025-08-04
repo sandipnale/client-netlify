@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = 'http://ec2-13-126-78-224.ap-south-1.compute.amazonaws.com:8080/api/foods';
+const API_URL = 'https://bedrooms-monsters-ties-ntsc.trycloudflare.com/api/foods';
 
 export const fetchFoodList = async () => {
     try {
