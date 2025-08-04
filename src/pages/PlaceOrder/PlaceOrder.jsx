@@ -106,7 +106,7 @@ const PlaceOrder = () => {
 
         try {
 
-            const response = await axios.post('http://localhost:8080/api/orders/verify', paymentData, { headers: { 'Authorization': `Bearer ${token}` } });
+            const response = await axios.post('https://bedrooms-monsters-ties-ntsc.trycloudflare.com/api/orders/verify', paymentData, { headers: { 'Authorization': `Bearer ${token}` } });
             if (response.status == 200) {
                 toast.success('Payment Successfull');
                 await clearCart();
