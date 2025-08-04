@@ -54,7 +54,7 @@ const PlaceOrder = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/api/orders/create', orderData, { headers: { 'Authorization': `Bearer ${token}` } });
+            const response = await axios.post('https://bedrooms-monsters-ties-ntsc.trycloudflare.com/api/orders/create', orderData, { headers: { 'Authorization': `Bearer ${token}` } });
             if (response.status === 200 && response.data.razorpayOrderId) {
                 initiateRazorpayPayment(response.data);
             } else {
