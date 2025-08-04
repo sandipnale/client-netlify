@@ -9,7 +9,7 @@ const {token}=useContext(StoreContext);
 const [data, setData]=useState([]);
 
 const fetchOrders=async()=>{
-   const response= await axios.get("http://localhost:8080/api/orders",{headers:{"Authorization": `Bearer ${token}`}});
+   const response= await axios.get("https://bedrooms-monsters-ties-ntsc.trycloudflare.com/api/orders",{headers:{"Authorization": `Bearer ${token}`}});
     setData(response.data);
 };
 
